@@ -1,0 +1,80 @@
+/* Fondo general y texto */
+body {
+    background-color: #222;
+    color: #ee6;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    text-align: center;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+/* Párrafos */
+p {
+    font-family: sans-serif;
+}
+
+/* Strong */
+strong {
+    border-bottom: 1px solid white;
+}
+
+/* The Force */
+.the-force {
+    background-color: #444;
+    font-weight: bold;
+}
+
+.light-side {
+    color: #66f;
+}
+
+.dark-side {
+    color: #f33;
+}
+
+/* Lista original */
+#og-trilogy {
+    list-style-type: circle;
+}
+
+/* Segunda lista (precuelas) */
+.movies-list:nth-of-type(2) {
+    padding-left: 30px;
+}
+
+/* Último elemento del tercer listado */
+.movies-list:nth-of-type(3) li:last-child {
+    margin-top: 10px;
+}
+
+/* Links visitados */
+a:visited {
+    color: grey;
+}
+
+/* Links sin href */
+a:not([href]) {
+    font-style: italic;
+}
+
+/* Alternar fondo en listas */
+.movies-list li:nth-child(odd) {
+    background-color: #111;
+}
+
+.movies-list li:nth-child(even) {
+    background-color: #333;
+}
+
+/* Primera línea del primer párrafo */
+p:first-of-type::first-line {
+    color: #efe;
+}
+
+/* Hover del título principal */
+h1:hover {
+    color: #66f;
+}
