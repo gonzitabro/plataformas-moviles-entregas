@@ -25,13 +25,13 @@
 
 		p {
 			font-family: serif;
-            
+            background-color: rgba(190, 120, 240, 0.6);
 		}
 
 		#primer-parrafo {
 			font-size: 1.3rem;
 			background-color: #CEE;
-           background-color: rgba(190, 120, 240, 0.6);
+          
 		}
 
 		p.importante em {
@@ -42,7 +42,7 @@
 		p.novelas a {
 			outline: 1px solid #333;
 			text-decoration: none;
-            background-color: rgba(190, 120, 240, 0.6);
+          
 		}
 		p.novelas a:hover {
 			text-decoration: underline;
@@ -54,7 +54,7 @@
 			font-size: 0.9rem;
 			opacity: 100%;
 			text-align: center;
-            background-color: rgba(190, 120, 240, 0.6);
+            
 		}
 	</style>
 </head>
