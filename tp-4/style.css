@@ -1,0 +1,66 @@
+* {margin: 0; padding: 0;}
+    body {margin: 1rem; background-color: #012; color: #e6e8ff; font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;}
+    article {margin: 0 auto}
+    a {color: #A06CD5}
+    a:visited {color: #E2CFEA}
+    p {margin: 1rem 0;}
+    figure {text-align: center;}
+    img {display: block; max-width: 100%; height: auto; margin: 0 auto; border-radius: 10px;}
+    @media (min-width: 400px) {
+  body {
+    background-color: rgb(40, 60, 80) !important;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    text-align: center;
+  }
+}
+@media (orientation: landscape) {
+  article {
+    max-width: 50ch;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    text-align: center;
+  }
+}
+@media (min-height: 200px) {
+  h1 {
+    background-color: rgb(40, 80, 68);
+  }
+}
+@media print {
+  p {
+    font-family: serif;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body, h1 {
+    color: #111;
+    background-color: #DDD;
+  }
+}
+@media (screen) and (hover: none) {
+  a {
+    background-color: #212;
+    padding: 2px 5px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 899px) {
+  img {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  img {
+    height: 400px;
+    object-fit: cover;
+  }
+}
+@media (min-resolution: 2dppx) {
+  article {
+    background-color: #667;
+  }
+}
