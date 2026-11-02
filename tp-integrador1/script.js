@@ -42,3 +42,27 @@ fetch("https://apis.datos.gob.ar/georef/api/provincias")
         cantidad.textContent = "Error";
         console.log("Error al consultar la API:", error);
     });
+
+// Buscador: filtra las tarjetas mientras se escribe
+let buscador = document.querySelector("#buscador");
+
+buscador.addEventListener("input", function () {
+    let texto = sinTildes(buscador.value);
+    let tarjetas = document.querySelectorAll("#provincias .col");
+
+    for (let i = 0; i < tarjetas.length; i++) {
+        let nombre = sinTildes(tarjetas[i].querySelector("h5").textContent);
+
+        if (nombre.includes(texto)) {
+            tarjetas[i].classList.remove("d-none");
+        } else {
+            tarjetas[i].classList.add("d-none");
+        }
+    }
+});
+
+// Pasa a minúsculas y saca las tildes (así "cordoba" encuentra "Córdoba")
+function sinTildes(texto) {
+    return texto.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+}
+
